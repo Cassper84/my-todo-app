@@ -1,13 +1,110 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+/* base styles */
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "Quicksand";
+  color: #333;
+}
+.App{
+  background: linear-gradient(to bottom, skyblue, lightgreen);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+ 
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* General styles */
+body {
+  margin: 0;
+  padding: 0;
+  
+}
+/* Header styles */
+.App-header {
+  text-align: center; 
+}
+
+/* Todo container styles */
+.todo-container {
+  background-color: white; 
+  border-radius: 10px; 
+  padding: 50px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.705); 
+  
+}
+
+/* Todo list item styles */
+.todo-list-item {
+  margin-bottom: 50px;
+  display: flex;
+}
+
+.todo-item-input {
+  margin-bottom: 10px;
+  margin-right: 10px;
+  flex-direction: column;
+  
+}
+.todo-item-input input{
+  padding: 8px;
+  border: none;
+  background-color: #33333328;
+  border-radius: 10px;
+}
+.todo-item-input label{
+  font-weight: bold;
+  margin-right: 10px;
+
+}
+
+/* Button styles */
+.primaryBtn {
+  background-color: #4CAF50; 
+  color: white;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.secondaryBtn{
+  background-color: #646664bb; 
+  color: white;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button-area button {
+  margin-right: 10px;
+  padding: 10px 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.icon{
+  font-size: 30px;
+  cursor: pointer;
+  
+}
+.check-icon{
+  font-size: 30px;
+  cursor: pointer;
+}
+.todo-list-items{
+  display: flex;
+  text-align: justify;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.todo-list{
+  background-color: #3333333b;
+  padding: 10px 10px;
+  margin-top: 20px;
+}
+.active{
+  background-color: #4CAF50; 
 }
